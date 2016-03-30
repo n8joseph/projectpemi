@@ -1,0 +1,63 @@
+.topsection {
+	margin-top: 2em;
+}
+
+.topsection h1 {
+	font-weight: 700;
+	font-size: 72px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+#hero {
+	width: 65%;
+	margin-top: 10px;
+	max-height: 75%;
+}
+
+#tagline {
+	font-size: 20px;
+}
+
+.sButton {
+	background-color:rgba(255,167,6,0.75);
+	font-weight: 500;
+}
+
+.sButton:hover {
+	background-color:rgba(255,167,6,1);
+}
+
+.bottomsection {
+	margin-top: 40px;
+}
+
+.bottomsection img {
+	width: 320px;
+	height: 320px;
+	margin-right: 32px;
+	margin-bottom: 32px;
+}
+
+.bottomsection img:hover {
+	opacity: 0.8;
+}
+
+#iload {
+	margin-top: 42px;
+	margin-bottom: -28px;
+	font-size: 24px;
+	color: #3385FF;
+}
+
+#iloadInv {
+	margin-top: 42px;
+	margin-bottom: -28px;
+	font-size: 24px;
+	opacity: 0;
+}
+
+[ng:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important; }
+

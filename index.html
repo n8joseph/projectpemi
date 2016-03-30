@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+  <head>
+
+    <title>Project Pemi</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-animate.js" type="text/javascript"></script>
+
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="MyController">
+
+      <div class="container topsection text-center">
+       
+        <h1>Project Pemi</h1>
+
+        <p>
+          <span class="lead" id="tagline">Planning an expedition in New Hampshire's Pemigawasset Wilderness</span>
+        </p>
+
+         <img id="hero" src="http://2.bp.blogspot.com/-pSihcXg4Nwo/U6S9pg60hbI/AAAAAAAAFwE/8BxBb-L6fhk/s1600/SAM_0998.JPG"/>
+
+        <form name="searchForm" ng-submit="searchInstagram(keyword)"style="display: none;">
+            <input name="keyword" type="text" placeholder="Enter a tag to search" ng-model="keyword" required/>
+            <input type="submit" value="Submit" class="btn btn-default sButton" required="">
+        </form>
+
+        <h3>Overview</h3>
+        <p class="text-left">This microsite serves as a project plan for Nate, Ben, and Joe to successfully traverse the 31.5 miles and 10 peaks of the Pemigawasset Loop. In addition to thoroughly outlining the logistics of the trip, Project Pemi contains a number of other useful features:<ul class="text-left">
+        <li><a href="https://ifttt.com/recipes/401783-send-sms-based-on-calendar-search">IFTTT recipe</a> to send Google Maps launch links to Nate's iPhone via SMS at scheduled times</li>
+        <li><a href="https://docs.google.com/document/d/1KvO-aVkLtZAch7MiyLKouIAsu1C80EvMAMz_VImak80/edit">Contigency Plan Workflow</a> to send emails if group does not return to civilization as planned</li>
+        <li>Fully mobile-responsive microsite for on-the-go access</li>
+        <li>Realtime aggregation of Instagram photos tagged with #PemiLoop (see bottom of this page)</li>
+        </ul>
+
+        </p>
+        <h3>Advance Planning</h3>
+        <p class="text-left">Participants will secure all individual, group, and food supplies outlined in <a href="https://docs.google.com/spreadsheets/d/1aZurIo0Y4Cm43cVX9mZUmscOZozDX-RVL94iMxpWNDg/edit?usp=sharing">this spreadsheet</a>. Joe will pick up vehicle from Hightstown, New Jersey. Participants will train to ensure physical condition will meet the trip's strenuous demands.
+        </p>
+        <h3>Wednesday, May 18th</h3>
+        <p class="text-left"><strong>6:30 PM</strong> <br/>Nate, Ben, and Joe meet at TBD rendezvous point in NYC with all supplies as specified above. Task 1 fires, sending Nate’s iPhone a Google Maps launch link with driving directions. Drive 208 miles to rest point in Boston, MA. <br/> <br/>
+        <strong>10:30 PM</strong><br/>Arrive at rest point.
+        </p>
+        <h3>Thursday, May 19th</h3>
+        <p class="text-left"><strong>7:00 AM</strong> <br/>7:00am: Task 2 fires, sending Nate’s iPhone a Google Maps launch link with driving directions. Drive 146 miles to Lincoln Woods Trail Head, stopping to purchase food supplies along the way.<br/> <br/>
+        <strong>10:00 AM</strong><br/>Arrive at <a href="https://www.google.com/maps/place/Lincoln+Woods+Visitor+Information+Center+%26+Trail+Head/@44.063402,-71.5909879,17z/data=!3m1!4b1!4m2!3m1!1s0x4cb37fb6132ca695:0x1bc11a2f5faca4d0">Lincoln Woods Trail Head</a>; park vehicle. Hike ~6 miles to <a href="https://www.google.com/maps/place/Liberty+Springs+Campsite,+Lincoln,+NH+03251/@44.1178857,-71.7196962,12z/data=!3m1!4b1!4m2!3m1!1s0x4cb47e3a5e520ea1:0xab1a95414c1aca67">Liberty Springs Campsite</a>.
+        </p>
+        <h3>Friday, May 20th</h3>
+        <p class="text-left"><strong>7:00 AM</strong> <br/>Break down camp. Hike ~6.5 miles to <a href="https://www.google.com/maps/place/44%C2%B011'24.0%22N+71%C2%B036'32.4%22W/@44.1837829,-71.6193428,2758m/data=!3m1!1e3!4m2!3m1!1s0x0:0x0">Garfield Ridge Campsite.</a>
+        </p>
+        <h3>Saturday, May 21st</h3>
+        <p class="text-left"><strong>7:00 AM</strong> <br/>Break down camp. Hike ~5.5 miles to <a href="https://www.google.com/maps/place/Guyot+Shelter/@44.1611068,-71.5393423,686m/data=!3m2!1e3!4b1!4m2!3m1!1s0x4cb380b29319f3f1:0xfae90d4295e30edf">Guyot Shelter</a>, stoping at <a href="http://www.outdoors.org/lodging/huts/galehead/">Galehead Hut</a> for snacks. If time and energy permit, leave packs at Guyot and make sunset hike to peak of West Bond Mountain. 
+        </p>
+        <h3>Sunday, May 22nd</h3>
+        <p class="text-left"><strong>7:00 AM</strong> <br/>Break down camp. Hike ~7.5 miles to <a href="https://www.google.com/maps/place/Franconia+Brook+Tentsite/@44.101498,-71.574059,12z/data=!4m2!3m1!1s0x0:0x9cfad0b8bb9f6bb7?sa=X&ved=0ahUKEwiXt-PF2OHLAhVE7iYKHT77C6AQ_BIIdDAN">Franconia Brook Campsite</a>.
+        </p>
+        <h3>Monday, May 23rd</h3>
+        <p class="text-left"><strong>7:00 AM</strong> <br/>Break down camp. Hike 3 miles to Lincoln Woods Trail Head, where vehicle is parked.<br/> <br/>
+        <strong>9:00 AM</strong><br/>Task 3 fires, sending Nate’s iPhone a Google Maps launch link with driving directions. Drive 329 miles to New York City, stopping for one or more hot meals along the way. Upload photos to Instagram using #PemiLoop, so they'll appear in the gallery below!
+        </p>
+
+      </div>
+      <br/>
+
+
+      <div class="row">
+          <div class="text-center">
+            <h2>#PemiLoop on Instagram</h2>
+          </div>
+      </div>
+
+
+      <div class="container bottomsection">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 text-center" ng-repeat="result in results" ng-cloak><a href="{{ result.link }}"><img ng-show="complete" ng-src="{{ result.images.standard_resolution.url }}"></a></div>
+        </div>
+      </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
